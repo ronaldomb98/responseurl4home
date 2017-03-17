@@ -1,3 +1,124 @@
-<h1>
-  {{title}}
-</h1>
+<div id="responsepayu">
+  <div class="jumbotron container">
+    <div class="container">
+      <h2>Hola Wapo</h2>
+      <div class="message">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequatur dicta dignissimos doloremque ex illo ipsum laborum quos veniam voluptate. Adipisci, est nisi! Blanditiis cumque eveniet laborum magni nemo sit!
+        </p>
+        <p>
+          Datos de la Transaccion
+        </p>
+      </div>
+      <div class="row">
+        <div class="
+        col-lg-4
+        col-lg-offset-2
+        col-md-4
+        col-md-offset-2
+        col-sm-12">
+          <div class="name_row">
+            Description
+          </div>
+        </div>
+        <div class="
+        col-lg-4
+        col-md-4
+        col-sm-12">
+          <p [innerHTML]="Payu_response.description"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="
+        col-lg-4
+        col-lg-offset-2
+        col-md-4
+        col-md-offset-2
+        col-sm-12">
+          <div class="name_row">
+            Referencia
+          </div>
+        </div>
+        <div class="
+        col-lg-4
+        col-md-4
+        col-sm-12">
+          <p [innerHTML]="Payu_response.referenceCode"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="
+        col-lg-4
+        col-lg-offset-2
+        col-md-4
+        col-md-offset-2
+        col-sm-12">
+          <div class="name_row">
+            Monto
+          </div>
+        </div>
+        <div class="
+        col-lg-4
+        col-md-4
+        col-sm-12">
+          <p [innerHTML]="Payu_response.TX_VALUE"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="
+        col-lg-4
+        col-lg-offset-2
+        col-md-4
+        col-md-offset-2
+        col-sm-12">
+          <div class="name_row">
+            Moneda
+          </div>
+        </div>
+        <div class="
+        col-lg-4
+        col-md-4
+        col-sm-12">
+          <p [innerHTML]="Payu_response.currency"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="
+        col-lg-4
+        col-lg-offset-2
+        col-md-4
+        col-md-offset-2
+        col-sm-12">
+          <div class="name_row">
+            Fecha
+          </div>
+        </div>
+        <div class="
+        col-lg-4
+
+        col-md-4
+        col-sm-12">
+          <p [innerHTML]="Payu_response.processingDate"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="
+        col-lg-4
+        col-lg-offset-2
+        col-md-4
+        col-md-offset-2
+        col-sm-12">
+          <div class="name_row">
+            Metodo de Pago
+          </div>
+        </div>
+        <div class="
+        col-lg-4
+        col-md-4
+        col-sm-12">
+          <p [innerHTML]="Payu_response.lapPaymentMethod"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
